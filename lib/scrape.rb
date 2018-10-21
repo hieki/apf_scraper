@@ -2,8 +2,6 @@ require 'open-uri'
 require 'nokogiri'
 require 'aws-sdk-dynamodb'
 
-require 'pry'
-
 def perform_request(url)
   puts "fetch #{url}"
   html = open(url) do |f|
